@@ -1,0 +1,121 @@
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+$greent-light: #90FD4C;
+
+/* mixins, variables, etc. */
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* miscellaneous */
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  @include box_sizing;
+}
+
+/* pagination */
+.pagination {
+  span {
+    a {
+      position: relative;
+      display: block;
+      padding: 0.5rem 0.75rem;
+      margin-left: -1px;
+      line-height: 1.25;
+      color: blue;
+      background-color: white;
+      border: 1px solid lightgray;
+      &:hover {
+        z-index: 2;
+        color: #224abe;
+        text-decoration: none;
+        background-color: lightgray;
+        border-color: lightgray;
+      }
+      &:focus {
+        z-index: 3;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem lightgray;
+      }
+    }
+    &:first-child {
+      a {
+      margin-left: 0;
+      border-top-left-radius: 0.35rem;
+      border-bottom-left-radius: 0.35rem;
+      }
+    }
+    &:last-child {
+      a {
+      border-top-right-radius: 0.35rem;
+      border-bottom-right-radius: 0.35rem;
+      }
+    }
+  }
+  .page.current {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    z-index: 3;
+    color: red;
+    border: 1px solid  red;
+  }
+  .page.gap {
+    display: none;
+  }
+}
+
+/* forms */
+.checkbox {
+  display: block;
+  margin-top: 10px;
+  span {
+    margin-left: 5px;
+    font-weight: normal;
+  }
+}
+
+/* product */
+.title_products{
+  color: black;
+  font-size: x-large;
+}
+#small-image ul li{
+  width: 40px;
+  height: 40px;
+}
+.button-cart {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:200px
+}
+
+/* comment product */
+.comment{
+  border-radius: 10px;
+  background-color: $greent-light;
+}
+
+/* profile */
+.table-profile {
+  td {
+    padding: 5px;
+  }
+}

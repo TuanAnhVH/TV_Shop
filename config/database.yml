@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: 123456
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: shop_tv
+
+test:
+  <<: *default
+  database: shop_tv_test
+
+production:
+  <<: *default
+  database: shop_tv_production
+  username: shop_tv
+  password: <%= ENV['LOGIN_APP_DATABASE_PASSWORD'] %>

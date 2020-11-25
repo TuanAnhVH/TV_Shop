@@ -1,0 +1,11 @@
+<li id="comment-<%= comment.id %>" class="comment mt-3 p-3">
+  <div class="content">
+    <h5 class="text-dark ml-3"><%= comment.content %></h5>
+  </div>
+  <span class="timestamp float-right">
+    <span><%= time_ago_in_words(comment.created_at) %><%= t ".ago" %></span>
+    <span><b><%= comment.user.name %></b></span>
+    <%= link_to t(".reply"), "#" %>
+  </span>
+  <div class="clear"></div>
+</li>

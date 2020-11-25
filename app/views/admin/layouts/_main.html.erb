@@ -1,0 +1,14 @@
+<div id="wrapper">
+  <%= render "admin/layouts/left_menu" %>
+  <div id="content-wrapper" class="d-flex flex-column">
+    <div id="content">
+      <%= render "admin/layouts/header" %>
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+      <div class="pb-3">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+</div>

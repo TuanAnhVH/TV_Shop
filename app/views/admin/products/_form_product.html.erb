@@ -1,0 +1,40 @@
+<div class="col-md-6 offset-md-3">
+  <%= form_for [:admin, @product] do |f| %>
+    <%= render "shared/error_messages", object: f.object %>
+
+    <div class="form-group row">
+      <%= f.label :name, t("product.name") %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+
+    <div class="form-group row">
+      <%= f.label :price, t("product.price") %>
+      <%= f.text_field :price, class: "form-control" %>
+    </div>
+
+    <div class="form-group row">
+      <%= f.label :brand, t("product.brand") %>
+      <%= f.collection_select :brand_id, load_brands, :id, :name, {}, {class: "form-control"} %>
+    </div>
+
+    <div class="form-group row">
+      <%= f.label :size, t("product.size") %>
+      <%= f.collection_select :size_id, load_sizes, :id, :name, {}, {class: "form-control"} %>
+    </div>
+
+    <div class="form-group row">
+      <%= f.label :describe, t("product.describe") %>
+      <%= f.text_area :describe, class: "form-control" %>
+    </div>
+
+    <div class="form-group row">
+      <%= image_tag @product.display_image if @product.image.attached? %>
+      <%= f.label :image, t("product.image") %>
+      <%= f.file_field :image, accept: Settings.product.accept_image, class: "form-control" %>
+    </div>
+
+    <div class= "form-group d-flex justify-content-center">
+      <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

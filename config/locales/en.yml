@@ -1,0 +1,168 @@
+en:
+  controllers:
+    pages_controller:
+      empty: "Empty Field!"
+    admin_controller:
+      not_have_access: "You do not have access"
+    products_controller:
+      product_not_found: "Product not found"
+    comments_controller:
+      comment_created: "Successful comment"
+      comment_fail: "Comment failed"
+  pages:
+    search:
+      result: "Search results of words"
+      cart: "Add to cart"
+      photo: "Photo"
+      content: "results"
+    filter_via_brand:
+      none_product: "This brand has no product"
+  products:
+    index:
+      photo: "Photo"
+      all_product: "All products"
+    show:
+      cart: "Add to cart"
+      price: "Price"
+      description: "Description"
+      photo: "Photo"
+      comment_here: "comment here..."
+      comments:
+        one: "%{count} comment"
+        other: "%{count} comments"
+  base:
+    request_login: "You are not logged in"
+    address: "Address"
+    phone: "phone"
+    cart: "Cart"
+    profile: "Profile"
+    search: "Search"
+    setting: "Setting"
+    name: "Name"
+    email: "Email"
+    password: "Password"
+    confirm_password: "Confirmation"
+    signup: "Signup"
+    login: "Login"
+    logout: "Logout"
+    cart: "Cart"
+    add_cart: "Add to cart"
+    product: "Product"
+    brand: "Brand"
+    brands: "Brands"
+    size: "Size"
+    order: "Order"
+    account: "Account"
+    home: "Home"
+    about: "about"
+    contact: "Contact"
+    feedback: "Feedback"
+    new: "New"
+    index: "Index"
+    action: "Action"
+    add: "Add"
+    edit: "Edit"
+    comment: "Comment"
+    photo: "Photo"
+  layouts:
+    application:
+      english: "English"
+      vietnamese: "Vietnamese"
+      store: "Store"
+    header:
+      logo: "logo"
+      search: "Search"
+      s_holder: "Search"
+    top:
+      samsung: "Tivi Sam Sung"
+      lg: "Tivi LG"
+      panasonic: "Tivi Panasonic"
+    footer:
+      info: "Our info"
+      shop_address: "123 nguyen tat thanh, Da nang, Viet Nam"
+      latest_news: "Latest news"
+      news_1: "The company is growing"
+      news_2: "High-quality products"
+      shop_phone: "0999123789"
+      follow_us: "Follow Us:"
+      copy: "2013 Mobile Store. All Rights Reserved | Design by Sun*"
+  shared:
+    error_messages:
+      error:
+        one: "The form contains %{count} error"
+        other: "The form contains %{count} errors"
+  admin:
+    static_pages:
+      home:
+        title: "Admin"
+    layouts:
+      header:
+        notification: "7"
+        message: "3"
+        user_name: "Admin"
+      left_menu:
+        shop: "TV Shop"
+        product_management: "Product Management"
+        business_management: "Business management"
+        statistical: "Statistical"
+        account_management: "Account management"
+  sessions:
+    login_fail: "Email or password is incorrect"
+    new:
+      remember_me: "Remember me"
+  static_pages:
+    home:
+      new_products: "New products"
+    about:
+      title: "About"
+    contact:
+      title: "Contact"
+  brands:
+    empty_brands: "Empty brands"
+    brand_created: "Branding successfully"
+    brand_not_found: "brand not found"
+    brand_updated: "Updated successfully"
+  number:
+    currency:
+      format:
+        unit: "$"
+        delimiter: ","
+        separator: "."
+        precision: 2
+        format: "%u%n"
+  product:
+    title: "Product"
+    new_product: "Create New Product"
+    name: "Name"
+    price: "Price"
+    describe: "Describe"
+    show: "Show"
+    edit: "Edit"
+    destroy: "Destroy"
+    confirm_destroy: "Are you sure?"
+    create_notification_success: "Create new product success"
+    create_notification_fail: "Create new product fail"
+    submit: "Submit"
+    back: "Back to product list"
+    brand: "Brand"
+    size: "Size"
+    image: "Picture"
+    update: "Update"
+    update_product: "Update Product"
+    update_success: "Update product information success"
+    product_not_found: "Product not found"
+  comments:
+    comment:
+      ago: " ago by "
+      reply: " reply "
+  users:
+    user_not_found: "User not found"
+    refuse_action: "You do not have permission to perform this action!"
+    profile_updated: "Profile updated"
+    show:
+      your_info: "Your profile"
+      created_at: "Created at"
+      edit_profile: "Edit profile"
+    edit:
+      h1_content: "Update your profile"
+      save_change: "Save changes"

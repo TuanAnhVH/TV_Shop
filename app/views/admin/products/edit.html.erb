@@ -1,0 +1,7 @@
+<div class= "d-flex justify-content-center">
+  <h1><%= t("product.update_product")%></h1>
+</div>
+
+<% provide :button_text, t("product.update") %>
+<%= render "form_product" %>
+<%= link_to t("product.back"), admin_products_path %>

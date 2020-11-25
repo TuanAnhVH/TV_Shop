@@ -1,0 +1,10 @@
+<tr>
+  <td><%= product.name %></td>
+  <td><%= number_to_currency(product.price) %></td>
+  <td><%= product.brand_name %></td>
+  <td><%= product.size_name %></td>
+  <td><%= product.describe %></td>
+  <td><%= link_to t("product.show"), "#" %></td>
+  <td><%= link_to t("product.edit"), edit_admin_product_path(product) %></td>
+  <td><%= link_to t("product.destroy"), "#" %></td>
+</tr>

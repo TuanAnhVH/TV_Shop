@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t ".store" %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "custom", media: "all", "data-turbolinks-track": "reload" %>
+    <%= stylesheet_link_tag "customer_style", media: "all", "data-turbolinks-track": "reload" %>
+    <%= stylesheet_link_tag "sb-admin-2.min", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+  </head>
+
+  <body id="page-top">
+    <div class="m-1">
+      <%= link_to t(".english"), locale: :en %>
+      <%= link_to t(".vietnamese"), locale: :vi %>
+    </div>
+    <% if(logged_in? && is_admin?) %>
+      <%= render "admin/layouts/main" %>
+    <% else %>
+      <%= render "layouts/main" %>
+    <% end %>
+  </body>
+</html>

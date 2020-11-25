@@ -1,0 +1,8 @@
+<div class="content-sidebar mt-3">
+  <h4 class="text-danger"><%= t "base.brands" %></h4>
+    <ul>
+      <% get_list_brand.each do |f| %>
+        <li><%= link_to f.name, filter_path(id: f.id) %></li>
+      <% end %>
+    </ul>
+</div>

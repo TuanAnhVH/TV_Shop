@@ -1,0 +1,53 @@
+<div class="clear"></div>
+<div class="wrap">
+  <div class="content mt-3">
+    <div class="content-grids p-2">
+      <div class="detalis-image">
+        <%= image_tag @product.display_image, size: "300x250" if @product.image.attached? %>
+      </div>
+      <div class="detalis-image-details">
+        <div class="ml-5">
+          <h3><%= @product.name %></h3>
+          <p><b><%= t ".price" %>: </b><span><%= number_to_currency(@product.price) %></span></p>
+          <p><%= t ".description" %>: <%= @product.describe %></p>
+          <%= link_to t("base.add_cart"), "", class: "button-cart" %>
+        </div>
+        <div class="clear"> </div>
+        <div class="ml-5 mt-2 share" id="small-image">
+          <ul>
+            <li>
+              <%= link_to image_tag("customer/twitter.png", alt: "facebook"),"#" %>
+            </li>
+            <li>
+              <%= link_to image_tag("customer/facebook.png", alt: "twitter"),"#" %>
+            </li>
+            <li>
+              <%= link_to image_tag("customer/rss.png", alt: "rss"),"#" %>
+            </li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+<div class="clear"></div>
+</div>
+<div class="col-md-8 mt-2 comments">
+  <h3 class="text-primary ml-2">
+    <%= t(".comments", count: @product.comments.count) %>
+  </h3>
+  <% if @product.comments.any? %>
+    <ol class="microposts">
+      <%= render @comments %>
+    </ol>
+    <div class="mt-2 ml-2 float-right"><%= paginate @comments %></div>
+    <div class="clear"></div>
+  <% end %>
+  <%= form_for @comment do |f| %>
+    <%= f.hidden_field :product_id, value: @product.id %>
+    <%= f.text_area :content, placeholder: t(".comment_here"),rows: 4,
+      class: "form-control mt-5 border-success" %>
+    <%= f.submit t("base.comment"), class: "btn btn-primary mt-3 float-right" %>
+  <% end %>
+  <div class="clear"></div>
+</div>

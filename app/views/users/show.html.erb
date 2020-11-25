@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="profile mt-3 text-white bg-warning">
+    <div class="p-3 profile-top bg-primary">
+      <h3 class="text-center">
+        <%= image_tag "admin/undraw_profile.svg", alt: "logo 1", size: "200x200",
+          class: "img-profile rounded-circle" %>
+      </h3>
+    </div>
+    <div class="col-md-8 offset-2 mt-3 p-3 profile-body">
+      <h2 class="text-primary"><%= t ".your_info" %></h2>
+      <table class="table-profile">
+        <tr>
+          <td><%= t "base.name" %>:</td>
+          <td><%= @user.name %></td>
+        </tr>
+        <tr>
+          <td><%= t "base.email" %>:</td>
+          <td><%= @user.email %></td>
+        </tr>
+        <tr>
+          <td><%= t "base.address" %>:</label></td>
+          <td><%= @user.address %></td>
+        </tr>
+        <tr>
+          <td><%= t "base.phone" %>:</label></td>
+          <td><%= @user.phone %></td>
+        </tr>
+        <tr>
+          <td><%= t ".created_at" %>:</label></td>
+          <td><%= @user.created_at.strftime("%d/%m/%Y") %></td>
+        </tr>
+      </table>
+      <%= link_to t(".edit_profile"), edit_user_path(current_user),
+        class: "btn btn-outline-dark mt-2" %>
+    </div>
+  </div>
+</div>

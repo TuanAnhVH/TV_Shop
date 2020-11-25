@@ -1,0 +1,168 @@
+vi:
+  controllers:
+    pages_controller:
+      empty: "Không có nội dung!"
+    admin_controller:
+      not_have_access: "Bạn không có quyền truy cập"
+    products_controller:
+      product_not_found: "Không tìm thấy sản phẩm"
+    comments_controller:
+      comment_created: "Bình luận thành công"
+      comment_fail: "Bình luận thất bại"
+  pages:
+    search:
+      result: "Kết quả tìm kiếm của từ"
+      cart: "Thêm vào giỏ hàng"
+      photo: "Ảnh"
+      content: "kết quả"
+    filter_via_brand:
+      none_product: "Nhãn hiệu này chưa sản phẩm nào"
+  products:
+    index:
+      photo: "Ảnh"
+      all_product: "Tất cả sản phẩm"
+    show:
+      cart: "Thêm vào giỏ hàng"
+      price: "Giá"
+      description: "Mô tả"
+      photo: "Ảnh"
+      comment_here: "bình luận tại đây"
+      comments:
+        one: "%{count} bình luận"
+        other: "%{count} bình luận"
+  base:
+    request_login: "Bạn chưa đăng nhập"
+    address: "Địa chỉ"
+    phone: "Điện thoại"
+    cart: "Giỏ hàng"
+    profile: "Hồ sơ"
+    search: "Tìm kiếm"
+    setting: "Cài đặt"
+    name: "Tên"
+    email: "Email"
+    password: "Mật khẩu"
+    confirm_password: "Xác nhận mật khẩu"
+    signup: "Đăng ký"
+    login: "Đăng nhập"
+    logout: "Đăng xuất"
+    cart: "Giỏ hàng"
+    add_cart: "Thêm vào giỏ hàng"
+    product: "Sản phẩm"
+    brand: "Nhãn hiệu"
+    brands: "Nhãn hiệu"
+    size: "Kích thước"
+    order: "Đơn hàng"
+    account: "Tài khoản"
+    home: "Trang chủ"
+    about: "Giới thiệu"
+    contact: "Liên hệ"
+    feedback: "Phản hồi"
+    new: "Mới"
+    index: "STT"
+    action: "Thao tác"
+    add: "Thêm"
+    edit: "Sửa"
+    comment: "Bình luận"
+    photo: "Ảnh"
+  layouts:
+    application:
+      english: "Tiếng anh"
+      vietnamese: "Tiếng việt"
+      store: "Cửa hàng"
+    header:
+      logo: "logo"
+      search: "Tìm kiếm"
+      s_holder: "Tìm kiếm"
+    top:
+      samsung: "Tivi SamSung"
+      lg: "Tivi LG"
+      panasonic: "Tivi Panasonic"
+    footer:
+      info: "Thông tin"
+      shop_address: "123 Nguyễn Tất Thành, Đà Nẵng, Việt Nam"
+      latest_news: "Tin mới nhất"
+      news_1: "The company is growing"
+      news_2: "High-quality products"
+      shop_phone: "0999123789"
+      follow_us: "follow ngay:"
+      copy: "2013 Mobile Store. All Rights Reserved | Design by Sun*"
+  shared:
+    error_messages:
+      error:
+        one: "Form chứa %{count} lỗi"
+        other: "Form chứa %{count} lỗi"
+  admin:
+    static_pages:
+      home:
+        title: "Trang Chủ"
+    layouts:
+      header:
+        notification: "7"
+        message: "3"
+        user_name: "Admin"
+      left_menu:
+        shop: "TV Shop"
+        product_management: "Quản lý sản phẩm"
+        business_management: "Quản lý kinh doanh"
+        statistical: "Thống kê"
+        account_management: "Quản lý tài khoản"
+  sessions:
+    login_fail: "Email hoặc mật khẩu không đúng"
+    new:
+      remember_me: "Lưu tài khoản"
+  static_pages:
+    home:
+      new_products: "Hàng mới về"
+    about:
+      title: "Giới thiệu"
+    contact:
+      title: "Liên hệ"
+  brands:
+    empty_brands: "Không có nhãn hiệu nào"
+    brand_created: "Thêm nhãn hiệu thành công"
+    brand_not_found: "Không tìm thấy nhãn hiệu"
+    brand_updated: "Cập nhật thành công"
+  number:
+    currency:
+      format:
+        unit: "đ"
+        delimiter: ","
+        separator: "."
+        precision: 2
+        format: "%u%n"
+  product:
+    title: "Sản Phẩm"
+    new_product: "Tạo mới sản phẩm"
+    name: "Tên sản phẩm"
+    price: "Giá tiền"
+    describe: "Mô tả"
+    show: "Hiển thị"
+    edit: "Chỉnh sửa"
+    destroy: "Hủy bỏ"
+    confirm_destroy: "Chắc chắn xóa ?"
+    create_notification_success: "Tạo mới sản phẩm thành công"
+    create_notification_fail: "Tạo mới sản phẩm thất bại"
+    submit: "Tạo mới"
+    back: "Quay lại danh sách"
+    brand: "Nhãn hiệu"
+    size: "Kích thước"
+    image: "Hình ảnh"
+    update: "Thay đổi"
+    update_product: "Thay đổi thông tin sản phẩm"
+    update_success: "Thay đổi thông tin sản phẩm thành công"
+    product_not_found: "Không tìm thấy sản phẩm"
+  comments:
+    comment:
+      ago: " trước bởi "
+      reply: " trả lời "
+  users:
+    user_not_found: "Không tìm thấy tài khoản"
+    refuse_action: "Bạn không có quyền thực hiện hành động này!"
+    profile_updated: "Hồ sơ cá nhân đã cập nhật"
+    show:
+      your_info: "Thông tin của bạn"
+      created_at: "Ngày tạo"
+      edit_profile: "Chỉnh sửa"
+    edit:
+      h1_content: "Cập nhật thông tin"
+      save_change: "Lưu lại"
